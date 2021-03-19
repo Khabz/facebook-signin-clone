@@ -1,17 +1,17 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 12px;
-    margin: 0;
-    padding: 0;
 }
 
 .header {
     background-color: #F0F2F5;
-    padding: 0 0 100px 0;
+    padding: 100px 0 100px 0;
+    height: 50vh;
 }
 
 .header__container {
@@ -118,12 +118,18 @@ body {
 }
 
 .create__page__container {
+    margin-top: 30px;
     text-align: center;
     font-size: 14px;
 }
 
+.signin__options {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .forgot__password {
-    margin-top: 12px;
+    margin-top: 30px;
     cursor: pointer;
     font-size: 14px;
     text-decoration: none;
@@ -138,37 +144,30 @@ body {
     text-decoration: none;
 }
 
-.footer__top ul li {
-    margin-right: 12px;
+.footer__container {
+    background-color: white;
+    height: auto;
 }
 
-.footer__top ul li a {
-    color: #4f96f3;
+.footer__inner__container {
+    margin: auto;
+    max-width: 980px;
 }
 
-.footer__top ul li:last-child a {
-    background: #EDF0F5;
-    padding: 2px 8px;
+.top__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none
+}
+
+.top__footer li {
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.top__footer a {
     text-decoration: none;
-}
-
-.footer__top ul li:last-child a:hover {
-    background: #D8DDEB;
-}
-
-.footer__bottom ul {
-    width: 100%;
-}
-
-.footer__bottom ul li {
-    margin-right: 0;
-    width: 7.14284714%;
-    float: left;
-    margin-bottom: 2px;
-}
-
-.footer__bottom ul li a {
-    color: #4f96f3;
 }
 
 @media only screen and (max-width: 992px) {
@@ -180,7 +179,7 @@ body {
         text-align: center;
         margin-top: 0;
     }
-    .logo__container img {
+    .logo {
         margin-left: 0;
     }
     .logo__container p {
@@ -189,7 +188,7 @@ body {
         font-size: 22px;
         line-height: 24px;
     }
-    .box {
+    .signin_content {
         width: 500px;
         margin: 40px auto 0;
         padding: 40px 20px;
@@ -197,32 +196,8 @@ body {
         background-color: white;
         margin-bottom: 4%;
     }
-    .seperator,
-    .right,
-    .left {
-        display: none;
-        font-size: 0;
-    }
-    #para {
-        font-size: 0;
-    }
-    #screenhr {
-        opacity: 100%;
-        margin-top: -3.9%;
-    }
     label {
         font-size: 0;
-    }
-    .copyright p {
-        margin: 0px 0 15px 0;
-        padding-bottom: 4px;
-        color: grey;
-        font-size: 10px;
-    }
-    .copyright a {
-        text-decoration: none;
-        color: grey;
-        padding-bottom: 20px;
     }
     .footer__top,
     .footer__bottom {
@@ -249,7 +224,7 @@ body {
     .logo__container p {
         width: 100%;
     }
-    .box {
+    .signin_c_ontent {
         width: 350px;
         box-shadow: 0 0 20px lightgray;
         background-color: white;
@@ -299,13 +274,13 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-    .box {
+    .signin_content {
         width: 90%;
         box-shadow: 0 0 20px lightgray;
         background-color: white;
         margin-bottom: 4%;
     }
-    .logo-area {
+    .logo__container {
         margin-top: 0;
     }
     .create-account {
