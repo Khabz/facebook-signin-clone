@@ -1,0 +1,55 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+.header__container {
+  max-width: 980px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 980px;
+}
+
+.logo {
+  height: 100px;
+  margin-left: -28px;
+}
+
+.btn__login {
+  cursor: pointer;
+  background: #1877f2;
+}
+
+.btn__create_account {
+  background: #42b72a;
+}
+
+.footer__container {
+  background-color: white;
+  height: auto;
+}
+
+.top__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.top__footer li {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.top__footer a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
